@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>HPE Employee Form</title>
+
+
+      <!-- JavaScript -->
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      
+      <script src="js/countrypicker.js"></script>
+
+
+
+      <link rel = "stylesheet"
+      type = "text/css"
+      href = "style.css"/>
+      <meta name ="viewport" content = "width =device-width",intial-scale = 1">  
+      
+    </head>
+    
+    <body>
+                
+      
+      <img src = "logo.jpg" width = 10% height = 39/>
+      <h2 > Employee Details </h2> 
+
+          
+    
+    <div class="bgimg">
+
+      
+
+        <div class="container">
+          <form action="/action_page.php">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="dob">Date Of Birth</label>
+              </div>
+              <div class="col-75-1">
+                <input type="date" id="birthday" name="birthday">
+              </div>
+              
+
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email Id</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Email id">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="number">Contact Number</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="number" name="Number" placeholder="Contact Number">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="gender">Gender</label>
+              </div>
+              <div class="col-75-1">
+                <input type="radio" name="gender" value="male"> Male <br>
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+              </div>
+            </div>
+
+      
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Address</label>
+              </div>
+              <div class="col-85">
+                <textarea id="subject" name="subject" style="height:80px"></textarea>
+                <label for="subject">PinCode</label>
+                <textarea id="subject" name="subject" style="height:50px"></textarea>
+                <label for="subject">State</label>
+                <textarea id="subject" name="subject" style="height:50px"></textarea>
+                </div>
+            </div>
+          
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select class="selectpicker countrypicker" data-live-search="true" data-default="India"></select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Hobbies</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write your Hobbies" style="height:80px"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>  
+    </body>
+   
+</html>
